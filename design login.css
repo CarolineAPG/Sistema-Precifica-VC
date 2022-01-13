@@ -119,3 +119,12 @@ body {
     height: 100%;
     opacity: 1;
 }
+.close {
+  position: absolute;
+  right: 1.5rem;
+  top: 0.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: inherit;
+}
