@@ -17,10 +17,10 @@ body{
 
 }
 .sidebar header{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     text-align:center ;
-    line-height: 70px;
+    line-height: 60px;
     background: #03baff;
     user-select: none;
 }
@@ -29,12 +29,12 @@ body{
     height: 100%;
     width: 100%;
     line-height: 65px;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     padding-left: 40px;
     box-sizing: border-box;
     border-top: 1px solid rgb(133, 219, 253);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(1, 81, 156);
     transition: .4s;
 }
 ul li:hover a{
@@ -60,5 +60,5 @@ label #btn{
     padding: 6px 12px;
 }
 label #cancel{
-    
+
 }
