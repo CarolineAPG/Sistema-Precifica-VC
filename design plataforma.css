@@ -10,10 +10,10 @@
 
 :root {
     /*cores:*/
-    --body-color: #e4e9f7;
+    --body-color: rgb(226, 231, 231);
     --sidebar-color:#fff;
     --primary-color:#07E1E1;
-    --primary-color-light:#f6f5ff;
+    --primary-color-light:#07e1e1;
     --toggle-color:#ddd;
     --text-color:#707070;
 
@@ -28,16 +28,6 @@ body{
     height: 100vh;
     background: var(--body-color);
 }
-.sidebar .text{
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--text-color);
-}
-.sidebar .image{
-    min-width: 60px;
-    display: flex;
-    align-items: center;
-}
 
 .sidebar{
     position: fixed;
@@ -47,6 +37,30 @@ body{
     width: 250px;
     padding: 10px 25px;
     background: var(--sidebar-color);
+}
+
+
+.sidebar li{
+    height: 50px;
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+    font-size: 30px;
+    
+}
+
+.sidebar li .icon,
+.sidebar li .text{
+    color: var(--text-color);
+    transition: var(--tran-02);
 }
 
 .sidebar header{
@@ -59,6 +73,7 @@ body{
     width: 40px;
     border-radius: 6px;
 }
+
 .sidebar header .image-text{
     display: flex;
     align-items: center;
@@ -73,10 +88,12 @@ header .image-text .header-text{
 .header-text .name{
     font-weight: 600;
 }
+
 .header-text .profession{
     margin-top: -2px;
 
 }
+
 .sidebar header .toggle{
     position: absolute;
     top: 50%;
@@ -92,3 +109,23 @@ header .image-text .header-text{
     color: var(--sidebar-color);
     font-size: 22px;
 }
+
+.sidebar li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    text-decoration: none;
+    transition: var(--tran-04);
+}
+
+.sidebar li a:hover{
+    background: var(--primary-color);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color: var(--sidebar-color);
+}
+   
