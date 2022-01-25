@@ -130,4 +130,47 @@ header .image-text .header-text{
 .sidebar li a:hover .text{
     color: var(--sidebar-color);
 }
+
+.sidebar .menu-bar{
+    height: calc(100%-50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
    
+.menu-bar .mode{
+    background: var(--primary-color-light);
+}
+.menu-bar .mode .moon-sun{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-bar .mode i{
+    position: absolute;
+
+}
+
+.menu-bar .mode i.sun{
+    opacity: 0;
+
+}
+
+.menu-bar .mode .toggle-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+
+}
+.toggle-switch .switch{
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+}
