@@ -139,7 +139,7 @@ header .image-text .header-text{
 }
    
 .menu-bar .mode{
-    background: var(--primary-color-light);
+    background: rgb(216, 214, 214);
 }
 .menu-bar .mode .moon-sun{
     height: 50px;
