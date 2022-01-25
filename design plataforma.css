@@ -18,7 +18,7 @@
     --text-color:#707070;
 
     /*transição:*/
-    --tran-03:all 0.2s ease;
+    --tran-02:all 0.2s ease;
     --tran-03:all 0.3s ease;
     --tran-04:all 0.4s ease;
     --tran-05:all 0.5s ease;
@@ -148,7 +148,7 @@ header .image-text .header-text{
 }
    
 .menu-bar .mode{
-    background: rgb(245, 245, 245);
+    background: rgb(255, 255, 255);
 }
 .menu-bar .mode .moon-sun{
     height: 50px;
@@ -191,7 +191,7 @@ header .image-text .header-text{
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    top: 50%;
+    top: 19%;
     left: 5px;
     transform: translateY();
     background: var(--sidebar-color);
@@ -199,6 +199,6 @@ header .image-text .header-text{
 }
 
 body.dark .switch::before{
-    left: 25px;
+    left: 20px;
 
 }
