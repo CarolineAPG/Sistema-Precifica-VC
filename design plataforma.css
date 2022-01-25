@@ -42,7 +42,7 @@ body{
 
 .sidebar li{
     height: 45px;
-    margin-top: 28px;
+    margin-top: 20px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -165,6 +165,7 @@ header .image-text .header-text{
     justify-content: center;
     height: 100%;
     min-width: 60px;
+    cursor: pointer;
 
 }
 .toggle-switch .switch{
@@ -173,4 +174,16 @@ header .image-text .header-text{
     width: 44px;
     border-radius: 25px;
     background: var(--toggle-color);
+}
+
+.switch::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY();
+    background: var(--sidebar-color);
 }
