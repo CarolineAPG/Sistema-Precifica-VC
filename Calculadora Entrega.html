@@ -7,6 +7,23 @@
     <title>Calculadora de Entrega</title>
 
     <link rel="stylesheet" href="design de calculadora.css">
+
+    <script>
+         function calc()
+         {
+         var n1 = parseInt(document.getElementById('n1').value);
+         var n2 = parseInt(document.getElementById('n2').value);
+         var n3 = parseInt(document.getElementById('n3').value);
+         var n4 = parseInt(document.getElementById('n4').value);
+         var n5 = parseInt(document.getElementById('n5').value);
+         var resultado = document.getElementById('result').value;
+
+         if(resultado === "result");
+         {
+           document.getElementById('result').value = (n2 - n1 + n3 + n4) / n5;
+         }
+        }
+    </script>
 </head>
 <body>
     <!--
@@ -15,6 +32,20 @@
        TABLE HEADER = CABEÇALHO DE TABELA
        TABLE DATE = DADO DE TABELA
     -->
-    
+    </br>
+         Number 1: <input type="text" id="n1"></br>
+        <br>
+        Number 2: <input type="text" id="n2"></br>
+        <br>
+        Number 3: <input type="text" id="n3"></br>
+        <br>
+        Number 4: <input type="text" id="n4" ></br>
+        <br>
+        Number 5: <input type="text" id="n5"></br>
+        <br>
+        </br><button onclick="calc()">=</button>
+             <input type="text" id="result"><br>
+
+   
 </body>
 </html>
