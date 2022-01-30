@@ -1,1 +1,86 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200&display=swap');
+*{
+    box-sizing: border-box; 
+    font-family: 'Poppins',sans-serif;
+    justify-content: center;
+    min-height: 4vh;
+}
+
+body{
+    padding: 120px 450px;
+    background-color: transparent;
+
+}
+
+.pagina{
+    justify-content: center;
+    align-items: center;
+}
+
+.stylo{
+   
+   text-align: center;
+   width: 50%;
+   max-width: 450px;
+   padding: 20px 50px;
+   border-radius: 30px;
+   background: #fff;
+   color: #03bcff;
+   font-size: 20px;
+   box-shadow: 0 15px 25px rgba(95, 95, 95, 0.335);
+   position: absolute;
+}
+
+.button{  
+    padding: 10px 10px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #03baff;
+  background-color: #fbfbfb;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+}
+
+.button:hover {
+    background-color: rgb(2, 77, 216);
+}
+
+.button:active {
+  background-color: rgb(2, 77, 216);
+  box-shadow: 0 5px #31c8ff;
+  transform: translateY(4px); 
+   width: 50px;
+   border-radius: 12px;
+   font-size: 10px;
+   color: #03baff;
+
+  
+}
+
+.res{
+    font-size: 20px;
+    width: 50%;
+    padding: 2px;
+    border: 0 none;
+    outline: 0;
+}
+
+.numeros{
+    padding: 5px ;
+    font-size: 12px;
+    border-radius: 6px;
+    border-color: rgba(83, 215, 255, 0.596);
+    color: floralwhite;
+    
+}
+
+  input::placeholder{
+    color: rgb(207, 207, 207);
+    font-size: 20px;
+    text-align: center;
+}
+
