@@ -23,7 +23,7 @@ body{
    text-align: center;
    width: 50%;
    max-width: 450px;
-   padding: 20px 50px;
+   padding: 15px 30px;
    border-radius: 30px;
    background: #fff;
    color: #03bcff;
@@ -38,25 +38,25 @@ body{
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #03baff;
-  background-color: #fbfbfb;
+  color: #fff;
+  background-color: green;
   border: none;
   border-radius: 15px;
   box-shadow: 0 4px #999;
 }
 
 .button:hover {
-    background-color: rgb(2, 77, 216);
+    background-color: greenyellow;
 }
 
 .button:active {
-  background-color: rgb(2, 77, 216);
-  box-shadow: 0 5px #31c8ff;
+  background-color: greenyellow;
+  box-shadow: 0 5px rgb(128, 246, 128);
   transform: translateY(4px); 
    width: 50px;
    border-radius: 12px;
    font-size: 10px;
-   color: #03baff;
+   color: #fff;
 
   
 }
