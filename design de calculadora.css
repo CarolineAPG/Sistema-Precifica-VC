@@ -77,7 +77,7 @@ body{
     color: #03bcff;
     
 }
-
+/*esse é css efeito que fica nas caixinhas*/
 .numeros:hover{
     background-color: #03bcff;
     box-shadow: 0 3px #03bcff67;
@@ -89,11 +89,22 @@ body{
 input{
     text-align: center;
 }
-/*esse é css efeito que fica nas caixinhas*/
-
-/*esse é css do resultado*/
+/*design do resultado*/
 input::placeholder{
+    font-size: 30px;
     color: #03bcff;
     background-color: #fff;
+    border-color: #fff;
 }
 
+.ativar{
+    background: #03bcff;
+    color: #fff;
+    border-radius: 12px;
+   
+}
+
+.sidebar li .ativar{
+    color: #fff;
+    transition: var(--tran-02);
+}
