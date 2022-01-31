@@ -21,9 +21,9 @@
 
          if(resultado === "result");
          {
-           document.getElementById('result').value = (n2 - n1 + n3 + n4) / n5;
-        
-         }
+           document.getElementById('result').value= (parseInt(n2 - n1 + n3 + n4) / n5).toFixed(2);
+           
+        }
         }
     </script>
 </head>
@@ -36,18 +36,18 @@
     -->
     <div class="stylo">
     </br>
-        Number 1: <input type="text" id="n1" placeholder="R$ 0,00" class="numeros"></br>
+        Number 1: <input type="text" id="n1" class="numeros" value="0,00"></br>
         <br>
-        Number 2: <input type="text" id="n2" placeholder="R$ 0,00" class="numeros"></br>
+        Number 2: <input type="text" id="n2"  class="numeros" value="0,00"></br>
         <br>
-        Number 3: <input type="text" id="n3" placeholder="R$ 0,00" class="numeros"></br>
+        Number 3: <input type="text" id="n3" class="numeros" value="0,00"></br>
         <br>
-        Number 4: <input type="text" id="n4" placeholder="R$ 0,00" class="numeros"></br>
+        Number 4: <input type="text" id="n4" class="numeros" value="0,00"></br>
         <br>
-        Number 5: <input type="text" id="n5" placeholder="R$ 0,00" class="numeros"></br>
+        Number 5: <input type="text" id="n5" class="numeros" value="0,00"></br>
         <br>
         </br><button onclick="calc()"class="button">Calcular</button>
-             <input type="text" id="result" class="res" placeholder="R$ 0,00"><br>
+             <input type="text" id="result" class="res" placeholder="R$ 0,00" disabled><br>
 
             </div>
 </body>

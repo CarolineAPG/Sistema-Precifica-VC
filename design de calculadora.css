@@ -31,9 +31,9 @@ body{
    box-shadow: 0 15px 25px rgba(95, 95, 95, 0.335);
    position: absolute;
 }
-
+/*design do botão*/
 .button{  
-    padding: 10px 10px;
+  padding: 10px 10px;
   font-size: 15px;
   text-align: center;
   cursor: pointer;
@@ -44,11 +44,11 @@ body{
   border-radius: 15px;
   box-shadow: 0 4px #999;
 }
-
+/*design do botão ao passar o mouse*/
 .button:hover {
     background-color: greenyellow;
 }
-
+/*design do botão ativado*/
 .button:active {
   background-color: greenyellow;
   box-shadow: 0 5px rgb(128, 246, 128);
@@ -78,9 +78,22 @@ body{
     
 }
 
-  input::placeholder{
-    color: rgb(207, 207, 207);
-    font-size: 20px;
+.numeros:hover{
+    background-color: #03bcff;
+    box-shadow: 0 3px #03bcff67;
+    transform: translateY(4px);
+    color: #fff;
+
+}
+/*esse é css do numero automatico que fica nas caixinhas*/
+input{
     text-align: center;
+}
+/*esse é css efeito que fica nas caixinhas*/
+
+/*esse é css do resultado*/
+input::placeholder{
+    color: #03bcff;
+    background-color: #fff;
 }
 
