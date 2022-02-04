@@ -11,8 +11,8 @@
 :root {
     /*cores:*/
     --body-color: rgb(226, 231, 231);
-    --sidebar-color:#fff;
-    --primary-color:#03baff;
+    --sidebar-color:#03baff;
+    --primary-color:#fff;
     --primary-color-light:#03baff;
     --toggle-color:#ddd;
     --text-color:#ddd;
@@ -81,7 +81,11 @@ body{
 .sidebar .image-text img{
 
     width: 40px;
+    height: 40px;
     border-radius: 10px;
+    -webkit-box-shadow: 2px 1px 20px rgba(255, 255, 255, 0.835);
+	-moz-box-shadow:    2px 1px 20px rgba(255, 255, 255, 0.835);
+	box-shadow:         2px 1px 20px rgba(255, 255, 255, 0.835);
 }
 
 .sidebar header .image-text{
@@ -93,16 +97,19 @@ body{
 header .image-text .header-text{
    display: flex;
    flex-direction: column;
+  
 }
 
 .header-text .name{
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: 15px;
+    color: #017dc5;
 }
 
 .header-text .profession{
     margin-top: -5px;
-    margin-left: 10px;
+    margin-left: 50px;
+    color: #017dc5;
 
 }
 
