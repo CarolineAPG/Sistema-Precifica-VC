@@ -1,140 +1,63 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Painel de Cadastro Ingredientes</title>
+	<!--Biblioteca css js-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
-<style>
-	.hidden{
-        display:none;
-
-  
-    }
-
-    .result{
-    	max-width:80px; 
-    
-    }
-
-</style>
-
-<div class="row">
-
-	<div class="col-md-4"></div>
-
-	<div class="col-md-4">
-
-		<div class="card card-body">
-
-			<!-- Form Wrapper & Button -->
-			<button class="btn btn-sm btn-primary" id="add-test">Add Test</button>
-			<div class="form-wrapper hidden">
-				<select class="form-control" id="test-name">
-					<option>----------</option>
-					<option>Flash Point</option>
-					<option>Water</option>
-					<option>Distillation</option>
-				</select>
-				<input class="form-control" type="text" id="test-result">
-				<button class="btn btn-sm btn-info" id="create-test">Add</button>
+</head>
+<body>
+	<div class="container">
+		<div class="table-wrapper">
+			<div class="table-title">
+				<div class="row">
+					<div class="col-sm-6">
+						<h2>Gerenciar<b></b>Funcionários</h2>
+					</div>
+					<div class="col-sm6">
+						<a href="#dddEmployeeModel" class="btn-btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i>Adicionar</a>
+						<a href="#dddEmployeeModel" class="btn-btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i>Deletar</a>					</div>
+				</div>
 			</div>
-
-			<!-- Data Table -->
-			<table class="table table-dark">
-			  <thead>
-			    <tr>
-			      <th scope="col">Test</th>
-			      <th scope="col">Result</th>
-            <th scope="col">preço</th>
-            <th></th>
-            
-
-			    </tr>
-			  </thead>
-			  <tbody id="tests-table">
-			    
-			  </tbody>
-			</table>
-
 		</div>
-
+		<div class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th>
+						<span class="custon-checkbox">
+							<input type="checkbox" id="selectAll">
+							<label for="selectAll"></label>
+						</span>
+					</th>
+					<th>Nome Ingrediente</th>
+					<th>Quantidade (g)</th>
+					<th>Preço</th>
+					<th>Ação</th>
+				</tr>
+			</thead>
+            <tbody>
+				<tr>
+					<td>
+						<span class="custom-checkbox">
+							<input type="checkbox" id="checkbox1" name="option[]" value="1">
+							<label for="checkbox1"></label>
+						</span>
+					</td>
+					<td>Registro</td>
+					<td>Registro g</td>
+					<td>Registro 0,00</td>
+				</tr>
+			</tbody>
+		</div>
 	</div>
-
-	<div class="col-md-4"></div>
-</div>
-
-
-<script>
-
-	$('#add-test').on('click', function(){
-	})
-
-
-	$('#test-result').on('keyup', function(){
-
-	})
-  $('#test-preço').on('keyup', function(){
-
-})
-
-	$('#test-name').on('change', function(){
-	})
-
-	$('#create-test').on('click', function(){
-
-	})
-
-	var tests = [
-		{'name':'ingredientes', 'id':'1', 'result':"43g", 'preço':"5,01"},
-	    {'name':'ingredientes1', 'id':'2', 'result':"61g", 'preço':"2,01"},
-	    {'name':'ingredientes2', 'id':'3', 'result':"24g", 'preço':"1,01"},
-	]
-
-
-	for (var i in tests){
-		addRow(tests[i])
-	}
-
-	function addRow(obj){
-		var row = `<tr scope="row" class="test-row-${obj.id}">
-	    			   <td>${obj.name}</td>
-	                   <td>${obj.result}</td>
-                           <td>${obj.preço}</td>
-	                   <td>
-                      <td>
-                        <td>
-                                        
-                      
-	                   		<button class="btn btn-sm btn-danger">Delete</button>
-                         <td>
-	                   		<button class="btn btn-sm btn-info">Save</button>
-	                   		
-	                   		<button class="btn btn-sm btn-danger">Cancel</button>
-        
-	                   		<button class="btn btn-sm btn-primary">Confirm</button>
-	                   		
-	                   </td>
-	    		   </tr>`
-		$('#tests-table').append(row)
-
-	}
-
-	function editResult(){
-
-	}
-
-	function saveUpdate(){
-	}
-
-
-
-	function deleteTest(){
-
-	}
-
-	function cancelDeletion(){
-
-	}
-
-	function confirmDeletion(){
-
-	}
-</script>
+	
+</body>
+</html>
