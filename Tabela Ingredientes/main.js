@@ -7,13 +7,15 @@ const closeModal = () => document.getElementById('modal')
     .classList.remove('active')
 
 const tempClient = {
-    nome: "ingrediente1",
-    quantidade: "150g",
+    nome: "ingrediente3",
+    quantidade: "160g",
     preço: "13,00"
 }
 //evento
 const createClient = (client) => {
-    localStorage.setItem("db_client", JSON.stringify(client))
+    const db_client = localStorage.getItem('db_client')
+    db_client.push(client)
+    localStorage.setItem("db_client", JSON.stringify(db_client))
 }
 
 document.getElementById('cadastrarCliente')
